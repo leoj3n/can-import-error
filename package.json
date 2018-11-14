@@ -1,0 +1,25 @@
+{
+  "name": "can-import-error",
+  "description": "Can import error.",
+  "license": "MIT",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "develop-ssr": "npm run develop-ssr --prefix server",
+    "develop-static": "npm run develop-static --prefix server",
+    "install": "npm install --prefix server && npm install --prefix client",
+    "lint": "npm run prettier-multi && npm run prettier-pkg && npm run prettier-html",
+    "start": "npm start --prefix server",
+    "test": "npm run test --prefix server && npm run test --prefix client",
+    "prettier-html": "prettier --parser html --write '**/*.html'",
+    "prettier-multi": "prettier --single-quote --trailing-comma es5 --write '**/*.{js,json,md,less}'",
+    "prettier-pkg": "prettier-package-json --write package.json client/package.json server/package.json"
+  },
+  "devDependencies": {
+    "prettier": "github:prettier/prettier",
+    "prettier-package-json": "^2.0.1"
+  },
+  "engines": {
+    "node": ">= 6.11.0"
+  }
+}

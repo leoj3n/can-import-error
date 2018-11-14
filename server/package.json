@@ -1,0 +1,26 @@
+{
+  "name": "can-import-error-server",
+  "description": "Server application.",
+  "license": "MIT",
+  "repository": "https://github.com",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "develop-ssr": "npm start -- --develop",
+    "develop-static": "npm start -- --develop --static",
+    "start": "node $npm_package_main",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "done-ssr-middleware": "^3.0.0-pre.0",
+    "donejs-error-format": "^1.2.0",
+    "express": "^4.16.4",
+    "kill-on-exit": "^1.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "request": "^2.87.0"
+  }
+}

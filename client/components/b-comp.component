@@ -1,0 +1,8 @@
+<can-component tag="b-comp">
+  <style type="text/less">
+    display: block;
+  </style>
+  <view>
+    <h1>B Component</h1>
+  </view>
+</can-component>

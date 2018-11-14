@@ -1,0 +1,12 @@
+<can-component tag="loading-tag">
+  <style type="text/less">
+    display: block;
+  </style>
+  <view>
+    {{#if this.isResolved}}
+      <content/>
+    {{else}}
+      <h4>Loading a tag...</h4>
+    {{/if}}
+  </view>
+</can-component>
